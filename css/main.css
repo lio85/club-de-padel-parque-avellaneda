@@ -1,0 +1,10 @@
+.main {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqwSze3ZT3C1iTS5pn6YWvoB4VLGdU46gCg&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60%;
+    opacity: .5;
+}
