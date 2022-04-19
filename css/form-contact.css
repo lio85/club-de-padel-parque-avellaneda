@@ -1,0 +1,167 @@
+input,
+textarea {
+    outline: none;
+}
+
+.background {
+    position: relative;
+    left: -10%;
+    width: 120%;
+    height: 650px;
+    margin-bottom: 100px;
+    border-top: #fff 12px solid;
+    border-bottom-left-radius: 140% 50%;
+    border-bottom-right-radius: 140% 50%;
+    overflow: hidden;
+    box-shadow:  inset 0 -35px rgba(128, 128, 128, .5);
+    background-image: url("https://nubiral.com/wp-content/uploads/2020/10/devops-cloud-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main__title,
+.main__text {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.main__title {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+    color: #eba900;
+}
+
+.main__text {
+    margin-bottom: 2em;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.main-container {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ccc;
+    background-color: #fff;
+}
+
+.main-container__title {
+    font-size: 1em;
+    text-align: center;
+}
+
+.main-container__text {
+    font-size: .9em;
+    color: #969696;
+}
+
+.form,
+.main-container__text {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__field--check {
+    margin-bottom: 50px;
+}
+
+.form__label {
+    margin-left: -2px;
+    font-size: .75em;
+    color: rgb(150, 150, 150); 
+}
+
+.form__input,
+.form__textarea {
+    border: #ccc solid 1px;
+}
+
+.form__input {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.form__input--check {
+    margin: 0;
+}
+
+.form__textarea {
+    width: 100%;
+    height: 40px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    padding-left: .5em;
+}
+
+.btn {
+    display: block;
+    padding: .8em 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #eec22c;
+    color: #fff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 88px;
+    background-color: #23202B;
+}
+
+@media (min-width: 301px) {
+    .main {
+        width: 85%;
+        max-width: 1035px;
+    }
+}
+    
+@media (min-width: 481px) {
+    body {
+        padding-bottom: 280px;
+    }
+    .main__background {
+        border-bottom-left-radius: 70% 50%;
+        border-bottom-right-radius: 70% 50%;
+    }
+}
+
+@media (min-width: 601px) {
+    .form__field {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form__input {
+        width: 49%;
+    }
+}
+
+@media (min-width: 995px) {
+    body {
+        padding-bottom: 200px;
+    }
+
+    .main__background {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+}
+
