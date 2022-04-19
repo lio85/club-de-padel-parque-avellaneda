@@ -90,15 +90,17 @@
 
 /* animacion al hacer click */
 
-
-
 .main-nav {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    font-size: 1.5em;
+    font-weight: bold;
     background-color: #eba900;
     transform: scale(0);
     transition: transform .3s;
@@ -106,5 +108,13 @@
 
 .main-nav--show {
     transform: scale(1);
+}
+
+.menu {
+    padding-left: 0;
+}
+
+.menu__item {
+    margin-bottom: 50px;
 }
 
