@@ -1,12 +1,15 @@
 .main {
+    outline: red solid 1px;
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 110px;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqwSze3ZT3C1iTS5pn6YWvoB4VLGdU46gCg&usqp=CAU);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     background-position: 60%;
+    background-attachment: fixed;
+    
 }
 
 .main__background-filter {
@@ -18,21 +21,20 @@
 }
 
 .main-content {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     left: 0;
     right: 0;
     padding:  2em;
 }
 
-.section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.article {
     max-width: 404px;
     padding: 1px 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
+    /* padding-bottom: 20px; */
     border: #fff solid 1px;
     border-radius: 5px;
     font-size: 1.2em;
@@ -41,10 +43,26 @@
     color: #fff;
 }
 
+.article__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .down-arrow {
     position: relative;
     width: 35px;
     height: 35px;
+    cursor: pointer;
+    transition: transform .7s;
+}
+
+.arrow-click {
+    position: absolute;
+    top: 26%;
+    left: 12%;
+    width: 27px;
+    height: 20px;
 }
 
 .down-arrow::before,
@@ -55,6 +73,7 @@
     width: 50%;
     height: 15%; 
     background-color: #fff;
+    
 }
 
 .down-arrow::before {
@@ -71,16 +90,20 @@
     transform: rotate(-45deg);
 }
 
-/* .arrow {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: 80%;
-    background-color: #000;
+.down-arrow--rotate {
+    transform: rotate(180deg);
+}
 
-} */
+.article__hidden-content {
+    height: 0;
+    padding-left: calc(20% - 25px);
+    text-align: left;
+    overflow: hidden;
+    transition: height .7s;
+}
+
+.hidden-content--show {
+    height: 245px;  
+}
+
 
