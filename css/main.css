@@ -1,5 +1,4 @@
 .main {
-    outline: red solid 1px;
     position: absolute;
     width: 100vw;
     min-height: 100vh;
@@ -8,8 +7,7 @@
     background-repeat: repeat-y;
     background-size: cover;
     background-position: 60%;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;   
 }
 
 .main__background-filter {
@@ -21,11 +19,10 @@
 }
 
 .main-content {
-    /* position: absolute; */
     position: relative;
     left: 0;
     right: 0;
-    padding:  2em;
+    padding: 3em .8em;
 }
 
 .article {
@@ -34,10 +31,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
-    /* padding-bottom: 20px; */
     border: #fff solid 1px;
     border-radius: 5px;
-    font-size: 1.2em;
     text-align: center;
     background-color: #444;
     color: #fff;
@@ -47,6 +42,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.article__header span {
+    margin-right: 10px;
+    color: #eba900;
 }
 
 .down-arrow {
@@ -73,7 +73,6 @@
     width: 50%;
     height: 15%; 
     background-color: #fff;
-    
 }
 
 .down-arrow::before {
@@ -96,14 +95,44 @@
 
 .article__hidden-content {
     height: 0;
-    padding-left: calc(20% - 25px);
+    padding-left: 1em;
+    font-size: .9em;
     text-align: left;
     overflow: hidden;
-    transition: height .7s;
+    transition: all .7s;
+}
+
+.winner-team {
+    color: #00a138;
+}
+
+.loser-team {
+    color: #F04217;
 }
 
 .hidden-content--show {
-    height: 245px;  
+    height: 170px;  
+}
+
+@media (min-width: 300px) {
+    .article__hidden-content {
+        padding-left: calc(20% - 25px);
+        font-size: 1em;
+    }
+
+    .hidden-content--show {
+        height: 185px;  
+    }
+}
+
+@media (min-width: 450px) {
+    .article {
+        font-size: 1.2em;
+    }
+
+    .hidden-content--show {
+        height: 225px;  
+    }
 }
 
 
