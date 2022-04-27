@@ -1,0 +1,30 @@
+.player-card__img {
+    position: relative;
+    top: -90px;
+    left: -20px;
+    width: 110%;
+}
+
+@media (min-width: 750px) {
+    .player-card__container {
+        width: 45%;
+    }
+
+    .player-card__img {
+        top: -53px;
+        left: -65px;
+        width: 130%;
+    }
+}
+
+@media (mIN-width: 860px) {
+    .player-card__container {
+        width: 50%;
+    }
+
+    .player-card__img {
+        top: -43px;
+        left: 0;
+        width: 100%;
+    }
+} 
