@@ -112,9 +112,18 @@
 
 .menu {
     padding-left: 0;
+    /* list-style: url(/assets/images/pelota-padel.jpg); */
 }
 
 .menu__item {
+    position: relative;
     margin-bottom: 50px;
+}
+
+.menu__item::before {
+    content: url(/assets/images/padel-ball-icon-transparent.png);
+    position: absolute;
+    top: 2px;
+    left: -25px;
 }
 
