@@ -4,71 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons//favicon-16x16.png">
+    <title>Club de Pádel Parque Avellaneda - El mejor Pádel amateur del Oeste Porteño</title>
     <link rel="stylesheet" href="css/generics.css">
     <link rel="stylesheet" href="css/header/header.css">
     <link rel="stylesheet" media="(max-width: 999px)" href="css/header/menu-modal.css" />
     <link rel="stylesheet" media="(min-width: 1000px)" href="css/header/desktop-header.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="shortcut icon" href="/logo-transparente.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/player/players.css">
 </head>
 <body>
     <header class="header">
         <div class="header__content">
-            <a href="index.html">
-                <img src="https://nubiral.com/wp-content/uploads/2020/06/logo-claro.svg" alt="logo" class="logo">
+            <a href="index.html" class="logo">
             </a> 
-            <div class="burguer-menu">
+            <div id="burguer-menu" class="burguer-menu">
                 <div class="burguer-menu__bar"></div>
                 <div class="burguer-menu__bar"></div>
                 <div class="burguer-menu__bar burguer-menu__bar--bottom"></div>
+                <div id="burguer-menu-modal" class="burguer-menu-modal">
+                    <div class="burguer-menu-modal__bar burguer-menu-modal__bar--first">
+                        <div id="box__bar-shadow--first" class="burguer-menu-modal__bar-shadow--first"></div>
+                    </div>
+                    <div class="burguer-menu-modal__bar burguer-menu-modal__bar--second">
+                        <div id="box__bar-shadow--second" class="burguer-menu-modal__bar-shadow--second"></div>
+                    </div>
+                </div>
             </div>
-                <!-- nav.main-nav>ul.menu>li.menu__item*9>a.menu__link{Servicios} -->
-                <nav class="main-nav">
-                    <ul class="menu">
-                        <li class="menu__item"><a href="" class="menu__link">Servicios</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Soluciones</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Connect</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Únete a nosotros</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Quiénes somos</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Clientes</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Partners</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Contacto</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">EN</a></li>
-                    </ul>
-                </nav>               
+            <!-- nav.main-nav>ul.menu>li.menu__item*9>a.menu__link{Servicios} -->
+            <nav id="main-nav" class="main-nav ">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Juan Ignacio Peverelli</a></li>
+                    <li class="menu__item"><a href="lionel-prats.html" class="menu__link">Lionel Prats</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Mariano Tolosa</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Mariano Zinser</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Santiago Fiorini</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Sergio Balestrini</a></li>
+                </ul>
+            </nav>    
         </div>
     </header>
-
-    <!-- <div class="background"></div> -->
-
-    <!-- <main class="main">
-        <h2 class="main__title">CONTACTO</h2>
-        <p class="main__text">Vamos camino hacia la transformación digital. Innová con nosotros! Completa el formulario y te contactaremos a la brevedad.</p>
-        <div class="main-container">
-            <h3 class="main-container__title">¡INNOVA CON NOSOTROS!</h3>
-            <form class="form">
-                <div class="form__field">
-                    <input type="text" class="form__input" placeholder="Nombre *">
-                    <input type="text" class="form__input" placeholder="Apellido *">
+    <main class="main">
+        <div class="main__background-filter"></div>
+        <div class="main-content">
+            <div class="player-card">
+                <div class="player-card__container">
+                    <img class="player-card__img" src="/assets/images/players/prats.jpeg" alt="">
                 </div>
-                <div class="form__field">
-                    <input type="text" class="form__input" placeholder="Email *">
-                    <input type="text" class="form__input">
+                <div class="player-card__info">
+                    <h3 class="player-card__name">Lionel Prats</h3>
+                    <p><span>Edad</span><br>37</p>
+                    <p><span>Altura</span><br>1.8 mts.</p>
+                    <p><span>Peso</span><br>77 kg.</p>
+                    <p><span>Debut en el circuito</span><br>4/4/22</p>
+                    <p><span>Puesto ránking</span><br>3°</p>
+                    <p><span>Puntos</span><br>29</p>
+                    <p><span>Partidos jugados</span><br>6 (0 victorias / 6 derrotas)</p>
+                    <p><span>Games disputados</span><br>90 (29 ganados / 61 perdidos)</p>
                 </div>
-                <div class="form__field">
-                    <input type="text" class="form__input" placeholder="Nombre de la empresa *">
-                    <input type="text" class="form__input" placeholder="Puesto laboral *">
-                </div>
-                <textarea name="message" id="" cols="30" rows="10" class="form__textarea" placeholder="Mensaje *"></textarea>
-                <div class="form__field--check">
-                    <input type="checkbox" id="check" class="form__input--check">
-                    <label for="check" class="form__label">Acepto recibir comunicaciones.</label>
-                </div>
-                <input type="submit" class="btn" value="ENVIAR">
-            </form>
-            <p class="main-container__text">Nos comprometemos a no utilizar su información de contacto para enviar spam.</p>
+            </div>
         </div>
+        
     </main>
- -->
-    <!-- <footer class="footer"></footer> -->
+
+    <script src="js/burguer-menu-button.js"></script>
+    <script src="js/game-data.js"></script>
 </body>
 </html>
