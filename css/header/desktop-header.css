@@ -22,6 +22,10 @@
     font-size: .8rem;
 }
 
+.menu__link  img {
+    display: none;
+}
+
 @media (hover: hover) {
 
     .menu__item {
