@@ -9,16 +9,18 @@
     }
 
     .player-card__img {
-        top: 50px;
+        top: 0px;
+        left: -30px;
+        width: 130%;
     }
 }
-
 @media (mIN-width: 850px) {
     .player-card__container {
         width: 50%;
     }
 
     .player-card__img {
-        top: -80px;
+        top: -90px;
+        width: 120%;
     }
 } 
