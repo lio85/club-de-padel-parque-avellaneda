@@ -1,0 +1,38 @@
+/* .player-card__img {
+    position: relative;
+    left: -250px;
+    width: 250%;
+}
+
+@media (min-width: 750px) {
+
+    .player-card__img {
+        left: -400px;
+        width: auto;
+        height: 600px;
+    }
+} */
+
+.player-card__img {
+    position: relative;
+    left: -60%;
+    width: auto;
+    height: 349px;
+}
+
+
+@media (min-width: 360px) {
+
+    .player-card__img {
+        left: -45%;
+    }
+}
+
+@media (min-width: 750px) {
+
+    .player-card__img {
+        left: -290px;
+        width: auto;
+        height: 600px;
+    }
+}
